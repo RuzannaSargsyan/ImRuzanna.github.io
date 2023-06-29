@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.background {
+    background-image:url(rm309-adj-14.jpg);
+    height:100vh;
+}
+
+.name-surname {
+    font-size:40px;
+}
+
+.links {
+    position: fixed;
+    right: 7%;
+}
+
+.font-cap {
+    font-family: Caprasimo, cursive;
+}
+
+.img-p {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-img {
+    height:350px;
+    margin-left:75px;
+    margin-top:100px;
+    border-radius:50%;
+}
+
+.img-p p {
+    font-family: pacifico , cursive;
+    font-size:30px;
+    margin:30px;
+}
+
+/* About Section*/
+
+.page-height {
+    height:100vh;
+}
+
+.books {
+    border-radius: 9px;
+}
+
+/* Skills section*/
+
+.skills-background {
+    background-image: url(light\ vivd\ blue\ background.jpg);
+    background-size: cover;
+}
+
+.skills-title {
+    font-family: Caprasimo, cursive;
+}
+
+.skill-card-background {
+    background-color: FFEEBB;
+}
+
+.skill-c-b-bottom {
+    background-color: FBFFDC;
+}
+
+#skills ul {
+    font-size: 20px;
+}  
+
+/* Hobbies */
+
+.hobby-background {
+    background-color:#F5F5DC;
+}
+
+.hobby-title {
+    color:aquamarine;
+    font-size:60px;
+    font-weight:bold;
+    -webkit-text-stroke:0.2px rgb(81, 77, 77);
+}
+
+#hobbies p {
+    font-size: 20px;
+}
+
+/* Contact Me */
+
+#contact-me {
+    height:200px;
+}
+
+.contact-me-container {
+    margin-top:70px;
+}
+
+/* Media Queries */
+
+@media (max-width:995px) {
+
+    .name-surname {
+        font-size:25px;
+    }
+
+    .links {
+        right:0;
+    }
+
+    #hobbies p {
+        font-size: 17px;
+    }
+
+    #contact-me svg {
+        height:25px;
+    }
+
+}
+
+@media (max-width:770px) {
+    .nav {
+        margin-top:60px;
+    }
+
+    .img-p {
+        flex-direction: coumn;
+    }
+
+    .skills-title {
+        margin-top: 0 ;
+        padding-top: 0;
+    }
+
+    .card-header,
+    .card-body {
+        padding:0;
+        margin:0;
+    }
+
+    #hobbies svg {
+        height:30px;
+    }
+
+   .hobbies-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+}
+
+@media (max-width:400px) {
+    .nav-item {
+        font-size: 10px;
+    }
+
+    .my-img {
+        height:170px;
+        margin:auto;
+        margin-top: 30px;
+    }
+
+    .img-p {
+        flex-direction: column;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #skills li {
+        font-size:10px;
+    }
+
+    #skills h4 {
+        font-size:11px;
+    }
+
+    .skills-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        height:400px;
+    }
+}
